@@ -44,12 +44,23 @@
     </header>
 
       <main>
+
+        <div class="backdrop is-hidden">
+            <div class="modal">
+                <button type="button" class="mod-button"></button>
+            </div>
+        </div>
+
+
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
                 <button type="button" class="hero-button">Заказать услугу</button>
             </div>
         </section>
+
+       
+
     <section class="features">
         <div class="container">
        
@@ -75,21 +86,37 @@
             <p class="features-item-title-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
         </li>
         </ul>
-    </div>
+      </div>
         </section>
    
-    <section class="product">
+      <section class="product">
         <div class="container">
         <h2 class="product-title">Чем мы занимаемся</h2>
         <ul class="product-list list">
+
             <li class="product-image">
+                <div class="product-thumb">
                 <img src="./images/picture1.jpg" alt="руки на клавиатуре" width="370"/> 
+               
+                <p class="product-text">Десктопные приложения</p></div>
             </li>
-            <li class="product-image"><img src="./images/picture2.jpg" alt="клавиатура и телефон в руках" width="370" /></li>
-            <li class="product-image"><img src="./images/box.jpg" alt="планшет в руках" width="370" /></li>
+
+            <li class="product-image">
+                <div class="product-thumb">
+                <img src="./images/picture2.jpg" alt="клавиатура и телефон в руках" width="370" />
+                <div class="product-name">
+            <p class="product-text">Мобильные приложения</p></div></div>
+            </li>
+
+            <li class="product-image">
+                <div class="product-thumb">
+                <img src="./images/box.jpg" alt="планшет в руках" width="370" />
+                <div class="product-name">
+                <p class="product-text">Дизайнерские решения</p></div></div>
+            </li>
         </ul>
         </div>
-    </section>
+       </section>
 
     <section class="staff">       
     <div class="container">
@@ -244,5 +271,6 @@
         
     </div>
 </footer>
+
 </body>
 </html>
