@@ -461,7 +461,7 @@ visibility 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 
-.product-thumb {
+/*.product-thumb {
     position: relative;
    
     }
@@ -478,19 +478,28 @@ visibility 250ms cubic-bezier(0.4, 0, 0.2, 1)
        bottom: 0;
                
     }
+*/
 
-
+.product-image{
+    position: relative;
+}
 .product-text {
-    bottom: 27px;
-    left: 83px;
+    bottom: 0;
+    left: 0;
   position: absolute;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
    
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    
+    background: rgba(47, 48, 58, 0.8);
     color: var(--header-color);
    
     display: flex;
@@ -737,7 +746,7 @@ margin-right: 30px;
 width: 370px;
 height: 404px;
     cursor: pointer;
-   border: 1px solid red;
+  
 
 }
 
@@ -774,7 +783,7 @@ height: 404px;
 }
  
 .card-border {
-    
+    border: 1px solid #EEEEEE;
     padding: 20px 24px;
     width: 370px;
 }
@@ -831,21 +840,11 @@ height: 404px;
 }
 
 
-.svg-link {
-    fill: #AFB1B8;
 
-    
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.svg-link:hover,
-.svg-link:focus{
-    fill: #2196F3 ;
-    
-}
 
 .clients-logo {
+   
     width: 170px;
     height: 92px;
     
@@ -857,24 +856,40 @@ height: 404px;
 
     cursor: pointer;
     display: flex;
-    
-    
-    transition-duration: 250ms;
+
+    transition-duration: 5000ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 
+.svg-link {
+   
+    display: flex;
+    padding: 16px 32px;
+    fill: #AFB1B8;
+
+    transition-duration: 5000ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.svg-link:hover,
+.svg-link:focus {
+    fill: #2196F3;
+}
+
 .client-icon {
     display: flex;
-    margin: 16px 32px;   
-  
+    
    }
 
-.clients-logo:hover,
+.clients-logo:hover, 
 .clients-logo:focus {
 
     border-color: var(--button-color);
-    
+    transition-duration: 5000ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
  /*footer*/
