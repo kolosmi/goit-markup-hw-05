@@ -341,8 +341,8 @@ visibility 250ms cubic-bezier(0.4, 0, 0.2, 1)
 
 .modal {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 35%;
+    left: 35%;
     
     min-width: 528px;
     min-height: 581px;
@@ -354,14 +354,16 @@ visibility 250ms cubic-bezier(0.4, 0, 0.2, 1)
     border-radius: 4px;
 
     background-color: #fff;
-    transform: scaleY(1)  scaleZ(1) translate(-50%, -50%);
-    transition: transform 3000ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: transform;
+    
+    transition: transform 3000ms cubic-bezier(0.4, 0, 0.2, 1) ;
    opacity: 1;
+   
 }
 
 .backdrop.is-hidden .modal {
-    transform: scaleY(-1)  scaleZ(-1) translate(-100%, -100%)
-
+    transform: rotate(-360deg);
+transition: transform 3000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-button{
